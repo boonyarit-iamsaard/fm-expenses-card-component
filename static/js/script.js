@@ -104,4 +104,4 @@ const manipulateExpenseData = async () => {
   }
 };
 
-document.addEventListener('DOMContentLoaded', manipulateExpenseData());
+window.onload = manipulateExpenseData();
