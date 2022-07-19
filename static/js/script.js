@@ -15,7 +15,7 @@ const getCurrentDayOfWeekIndex = () => {
  * @returns {Promise<{day: String, amount: Number}[]>} expenses data
  */
 const fetchExpensesData = async () => {
-  const url = '/static/data/data.json';
+  const url = '../../data.json';
 
   try {
     const response = await fetch(url);
