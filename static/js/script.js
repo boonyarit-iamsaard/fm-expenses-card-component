@@ -15,7 +15,11 @@ const getCurrentDayOfWeekIndex = () => {
  * @returns {Promise<{day: String, amount: Number}[]>} expenses data
  */
 const fetchExpensesData = async () => {
-  const url = '../../data.json';
+  // set path to the local json file which working on local live server and GitHub Pages
+  const { origin, href, pathname } = window.location;
+  const path = 'static/data/data.json';
+  const url =
+    pathname === '/index.html' ? `${origin}/${path}` : `${href}${path}`;
 
   try {
     const response = await fetch(url);
