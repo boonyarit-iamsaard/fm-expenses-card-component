@@ -1,0 +1,6 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": false
+  },
+  "liveServer.settings.port": 5501
+}
